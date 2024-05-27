@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "ronel de jesus",
   "license": "ISC",
-  "description": "",
+  "description": "this is the version 2 of the SaveURL",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "concurrently": "^8.2.2",
