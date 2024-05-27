@@ -2,7 +2,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
-  "proxy": "https://save-url-v2.onrender.com/",
+  "proxy": "https://save-url-v2.onrender.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
