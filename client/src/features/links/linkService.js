@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/links/';
+const API_URL = 'https://save-url-v2.onrender.com/api/links/';
 
 // create a new link
 const createLink = async (linkData, token) => {

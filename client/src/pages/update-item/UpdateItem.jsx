@@ -66,7 +66,7 @@ const AddNew = () => {
 
       try {
         await axios.put(
-          `http://localhost:5001/api/links/${id}`,
+          `https://save-url-v2.onrender.com/api/links/${id}`,
           updatedData,
           config
         );
