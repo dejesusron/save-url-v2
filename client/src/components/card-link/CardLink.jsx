@@ -18,15 +18,19 @@ const CardLink = ({ link }) => {
   return (
     <li>
       <div
-        className={`card w-full bg-base-100 shadow-xl border ${
+        className={`card w-full bg-base-100 shadow-xl border relative ${
           link.type === 'video' ? 'bg-green-100' : 'bg-orange-100'
         }`}
       >
         <div className='card-body p-4'>
           <h2 className='card-title'>{link.title}</h2>
           <p>{link.description}</p>
-          <p>{link.url}</p>
-          <p>{new Date(link.createdAt).toLocaleDateString('en-US')}</p>
+          <a href={`${link.url}`} target='_blank' className='underline'>
+            Visit link
+          </a>
+          <p className='text-sm absolute bottom-4 left-4'>
+            {new Date(link.createdAt).toLocaleDateString('en-US')}
+          </p>
           <div className='card-actions justify-end mt-6'>
             <div className='tooltip' data-tip='Update'>
               <Link to={`/update/${link._id}`} className='btn btn-neutral'>
