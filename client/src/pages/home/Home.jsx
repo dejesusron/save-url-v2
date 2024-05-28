@@ -95,7 +95,7 @@ const Home = () => {
                 onChange={handleSelect}
                 value={select}
               >
-                <option selected value='all'>
+                <option disabled selected value='all'>
                   Filter
                 </option>
                 <option value='all'>All</option>
