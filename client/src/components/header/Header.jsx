@@ -51,9 +51,7 @@ const Header = () => {
       <div className='container mx-auto px-4'>
         <div className='navbar p-0'>
           <div className='flex-1'>
-            <Link to='/signin' className='text-2xl font-bold'>
-              SaveURL.v2
-            </Link>
+            <Link className='text-2xl font-bold'>SaveURL.v2</Link>
           </div>
           <div className='flex-none'>
             <ul className='menu menu-horizontal px-1'>

@@ -82,8 +82,6 @@ const Home = () => {
     return <Loading />;
   }
 
-  console.log(links);
-
   return (
     <div>
       <div className='container mx-auto px-4'>
