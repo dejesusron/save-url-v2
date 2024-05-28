@@ -6,8 +6,10 @@ import User from '../models/userModel.js';
 // @route: GET /api/links
 // @access: Private
 const getLinks = asyncHandler(async (req, res) => {
-  const userLinks = await Link.find({ user: req.user.id });
-  const links = await Link.find();
+  const userLinks = await Link.find({ user: req.user.id }).sort({
+    createdAt: -1,
+  });
+  const links = await Link.find().sort({ createdAt: -1 });
 
   if (req.user.role === 'admin') {
     res.status(200).json(links);
