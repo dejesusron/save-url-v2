@@ -23,8 +23,8 @@ const CardLink = ({ link }) => {
         }`}
       >
         <div className='card-body p-4'>
-          <h2 className='card-title'>{link.title}</h2>
-          <p>{link.description}</p>
+          <h2 className='card-title line-clamp-1'>{link.title}</h2>
+          <p className='line-clamp-1'>{link.description}</p>
           <a href={`${link.url}`} target='_blank' className='underline'>
             Visit link
           </a>

@@ -2,6 +2,7 @@ import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import Header from '../../components/header/Header';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import Footer from '../../components/footer/Footer';
 
 const UserLayout = () => {
   const navigate = useNavigate();
@@ -54,6 +55,8 @@ const UserLayout = () => {
           </ul>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
